@@ -6,6 +6,9 @@ import Organization from "./pages/Organization";
 import OrganizationItem from "./pages/OrganizationItem";
 import Request from "./pages/Request";
 import Signup from "./pages/Signup";
+import Requested from "./component/organization/Requested";
+import Minted from "./component/organization/Minted";
+import Info from "./component/organization/Info";
 function App() {
   return (
     <div>
@@ -17,6 +20,9 @@ function App() {
         <Route path="/eachorg" element={<OrganizationItem />} />
         <Route path="/request" element={<Request />} />
         <Route path="/signup" element={<Signup />} />
+        <Route path="/requested" element={<Requested />} />
+        <Route path="/minted" element={<Minted />} />
+        <Route path="/info" element={<Info />} />
       </Routes>
     </div>
   );
